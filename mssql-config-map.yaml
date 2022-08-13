@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mssql-connection-string
+  labels:
+    app: mvc
+data:
+  db-connection-string: Server=mssql-service;Database=ProductsDB;User=SA;Password=@Aa1233;
